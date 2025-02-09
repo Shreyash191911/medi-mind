@@ -1,7 +1,9 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  env: {
+    OPENAI_API_KEY: process.env.OPENAI_API_KEY,
+  },
+  /* Add any other Next.js config options here */
 };
 
-export default nextConfig;
+module.exports = nextConfig;

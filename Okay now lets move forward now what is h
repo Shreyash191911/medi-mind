@@ -1,0 +1,17 @@
+Okay now lets move forward now what is happening is that first I clicked on the "Explore" button in the AI-powered diagnostic card and then I entered the symptoms and then it asked me question "Do you have medical resports" Ithen I clicked the "yes" button and then I uploaded some dummy medical records I have and then clicked the "check" button and then it gave me follwing error :
+
+Console Error
+
+AxiosError: Request failed with status code 500
+
+Source
+src/app/(routes)/medical-analysis/features/feature_implement/page.tsx (73:24) @ async handleCheck
+
+  71 |     try {
+  72 |       // Send API request to your backend
+> 73 |       const { data } = await axios.post("/api/get-disease-prediction", formData, {
+     |                        ^
+  74 |         headers: { "Content-Type": "multipart/form-data" },
+  75 |       });
+  76 |
+Show ignored frames
